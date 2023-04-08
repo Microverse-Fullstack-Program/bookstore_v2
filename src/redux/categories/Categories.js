@@ -1,21 +1,24 @@
-// Actions
-const STATUS = 'CATEGORIES/BOOK_STATUS';
+import { createSlice } from '@reduxjs/toolkit';
 
-const initStateCategories = [];
-
-// Reducer
-const ReducerCategories = (state = initStateCategories, action) => {
-  switch (action.type) {
-    case STATUS:
-      return 'Under construction';
-    default:
-      return state;
-  }
+const initialState = {
+  categories: [],
+  isLoading: true,
 };
 
-// Action creator
-export const Status = () => ({
-  type: STATUS,
+const categoriesSlice = createSlice({
+  name: 'categories',
+  initialState,
+  reducers: {
+    checkStatus: (state, action) => {
+      const newState = { ...state };
+      newState.categories = action.payload === 'Under construction'
+        ? 'Under construction'
+        : state.categories;
+
+      return newState;
+    },
+  },
 });
 
-export default ReducerCategories;
+export default categoriesSlice.reducer;
+export const { checkStatus } = categoriesSlice.actions;

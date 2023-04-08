@@ -1,10 +1,10 @@
 <a name="readme-top"></a>
 
 <div align="center">
-    <img src="calculator.JPG" alt="logo" width="500"  height="300" />
+    <img src="bookstore.JPG" alt="logo" width="500"  height="300" />
   <br/>
 
-  <h3><b>Calculator APP Developed Using React </b></h3>
+  <h3><b>Bookstore website Using React & Redux </b></h3>
 
 </div>
 
@@ -34,17 +34,21 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Math Magicians] <a name="about-project"></a>
+# 📖 [Bookstore Website] <a name="about-project"></a>
 
-> **Math magicians** app is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
-> - Make simple calculations.
-> - Read a random math-related quote.
+> **Bookstore Website** The Bookstore is a website similar to the "Awesome Books" website. It is a simplified version of it that allows user to:
+> - Display a list of books
+> - Add a book
+> - Remove a selected book
+
+By building this application, you will learn how to use React and Redux in the context of a real application.
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML5 
 - CSS3
 - JavaScript
 - ReactJS
+- Redux
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -52,6 +56,7 @@
 > - GitHub and Gitflow
 > - JavaScript ES6 Module
 > - ReactJS
+> - Redux
 > - Web Pack
 > - Jest Test
 > - React Testing Library
@@ -71,7 +76,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](#)
+- [Live Demo Link](https://bookstore-xpp0.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,7 +98,7 @@ Clone this repository to your desired folder:
 2. Navigate to the directory where you want clone the copy of this repository
 3. Create new directory [optional]
 4. Clone the repo using the below command
- > git clone https://github.com/Microverse-Fullstack-Program/math_magicians.git
+ > git clone https://github.com/Microverse-Fullstack-Program/bookstore.git
 5. Alternatively, you can download the zip file of your project by clicking on the Code button on the right side of your project page and clicking on Download ZIP
 
 ## Install and Run
@@ -144,12 +149,9 @@ This project can be used to learn and practice basics of React.js. Specifically;
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] Allow user to add qoutes
-- [ ] Add actual content to Homepage
 - [ ] Improve the UI/UX features
-- [ ] Add scientific calculator features 
-- [ ] Store the calculation history
+- [ ] Implement a filtering feature
+- [ ] Add Edit and comments functionalities
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,7 +160,7 @@ This project can be used to learn and practice basics of React.js. Specifically;
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Microverse-Fullstack-Program/math_magicians/issues).
+Feel free to check the [issues page](https://github.com/Microverse-Fullstack-Program/bookstore/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

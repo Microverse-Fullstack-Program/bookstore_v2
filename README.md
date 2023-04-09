@@ -1,10 +1,10 @@
 <a name="readme-top"></a>
 
 <div align="center">
-    <img src="calculator.JPG" alt="logo" width="500"  height="300" />
+    <img src="bookstore.JPG" alt="logo" width="500"  height="300" />
   <br/>
 
-  <h3><b>Calculator APP Developed Using React </b></h3>
+  <h3><b>Bookstore APP Using React </b></h3>
 
 </div>
 

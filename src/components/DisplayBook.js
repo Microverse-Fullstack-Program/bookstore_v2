@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
 
-const Book = ({ book }) => {
+const DisplayBook = ({ book }) => {
   const dispatch = useDispatch();
   const handleRemoveBook = () => {
     dispatch(removeBook(book.item_id));
@@ -35,4 +35,4 @@ Book.propTypes = {
   }).isRequired,
 };
 
-export default Book;
+export default DisplayBook;

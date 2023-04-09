@@ -27,7 +27,7 @@ const DisplayBook = ({ book }) => {
   );
 };
 
-Book.propTypes = {
+DisplayBook.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string,
     author: PropTypes.string,

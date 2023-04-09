@@ -1,6 +1,6 @@
 import { Outlet, NavLink } from 'react-router-dom';
 
-const Layout = () => {
+const NavBar = () => {
   const navLinkStyle = ({ isActive }) => {
     const activeLinkStyle = {
       fontWeight: isActive ? 'bold' : 'normal',
@@ -30,4 +30,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default NavBar;

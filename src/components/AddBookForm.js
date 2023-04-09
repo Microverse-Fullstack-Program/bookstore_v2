@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { addBook } from '../redux/books/booksSlice';
 
-const NewBook = () => {
+const AddBookForm = () => {
   const dispatch = useDispatch();
 
   const [title, setTitle] = useState('');
@@ -43,4 +43,4 @@ const NewBook = () => {
   );
 };
 
-export default NewBook;
+export default AddBookForm;

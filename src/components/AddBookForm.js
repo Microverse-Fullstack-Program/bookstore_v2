@@ -8,18 +8,16 @@ const AddBookForm = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
+  const addingBook = () => {
+    dispatch(addBook({ title, author }));
+    setAuthor('');
+    setTitle('');
+  };
+
   return (
     <div className="form-wrapper">
       <h2>Add a new book</h2>
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-          dispatch(addBook({ title, author }));
-          setAuthor('');
-          setTitle('');
-        }}
-        className="book-form"
-      >
+      <form className="book-form">
         <input
           type="text"
           name="title"
@@ -37,7 +35,12 @@ const AddBookForm = () => {
           onChange={(e) => setAuthor(e.target.value)}
         />
         <span />
-        <button type="submit"> Add </button>
+        <button
+          type="button"
+          onClick={addingBook}
+        >
+          Add
+        </button>
       </form>
     </div>
   );

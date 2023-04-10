@@ -4,7 +4,7 @@
     <img src="bookstore.JPG" alt="logo" width="500"  height="300" />
   <br/>
 
-  <h3><b>Bookstore website Using React & Redux </b></h3>
+  <h3><b>Bookstore APP Using React </b></h3>
 
 </div>
 
@@ -150,8 +150,8 @@ This project can be used to learn and practice basics of React.js. Specifically;
 
 ## 🔭 Future Features <a name="future-features"></a>
 - [ ] Improve the UI/UX features
-- [ ] Implement a filtering feature
-- [ ] Add Edit and comments functionalities
+- [ ] Add scientific calculator features 
+- [ ] Store the calculation history
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

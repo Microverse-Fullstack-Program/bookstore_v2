@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import Book from './Book';
-import NewBook from './AddBook';
+import { useSelector } from 'react-redux';
+import DisplayBook from './DisplayBook';
+import AddBookForm from './AddBookForm';
 
 const Books = () => {
-  const [book] = useState({
-    title: 'Book 1',
-    author: 'Author 1',
-  });
+  const { books } = useSelector((state) => state.books);
 
   return (
     <div className="books-wrapper">
-      <div className="book-list">
-        <p>List of Books</p>
-        <Book book={book} />
-      </div>
-      <NewBook />
+      {books.map((book) => (
+        <div key={book.item_id} className="book">
+          {' '}
+          <DisplayBook book={book} />
+        </div>
+      ))}
+
+      <AddBookForm />
     </div>
   );
 };

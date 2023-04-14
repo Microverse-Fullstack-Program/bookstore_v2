@@ -124,21 +124,14 @@ body {
   color: #a5cece73;
 }
 
-.bookBtn button:hover {
-  color: #cb1f1f;
-}
-.bookBtn button:active {
-  color: #cb1f1f;
+.book-wrapper button {
+  border: none;
 }
 
 .bookBtn :nth-child(2) {
   border-left: 1px solid #ecebe8;
   border-right: 1px solid #ecebe8;
   padding: 0 0.85rem;
-}
-
-.book-wrapper button {
-  border: none;
 }
 
 .bk-status {
@@ -288,4 +281,12 @@ body {
 .btn-categories p {
   background-color: #fff;
   padding: 1.25rem 0.85rem;
+}
+
+.bookBtn button:hover {
+  color: #cb1f1f;
+}
+
+.bookBtn button:active {
+  color: #cb1f1f;
 }

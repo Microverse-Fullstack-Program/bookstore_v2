@@ -13,11 +13,11 @@ const Books = () => {
   }, [dispatch]);
 
   if (isLoading) {
-    return <p>Please wait it is loading...</p>;
+    return <p className="loading">Please wait it is loading...</p>;
   }
 
   if (error) {
-    return <p>Error occurred while fetching books</p>;
+    return <p className="error">Error occurred while fetching books</p>;
   }
 
   return (

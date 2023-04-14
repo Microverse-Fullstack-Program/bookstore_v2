@@ -25,9 +25,10 @@ const AddBookForm = () => {
 
   return (
     <div className="form-wrapper">
-      <h2>Add a new book</h2>
+      <h3>ADD NEW BOOK</h3>
       <form className="book-form">
         <input
+          className="title-input"
           type="text"
           name="title"
           placeholder="Title"
@@ -36,6 +37,7 @@ const AddBookForm = () => {
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
+          className="author-input"
           type="text"
           name="author"
           placeholder="Author"
@@ -44,22 +46,30 @@ const AddBookForm = () => {
           onChange={(e) => setAuthor(e.target.value)}
         />
         <select
+          className="genre-input"
           name="category"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
         >
-          <option value="">Select category</option>
+          <option value="Unknown"> Select Book Genre</option>
           <option value="Fiction">Fiction</option>
-          <option value="Non Fiction">Non-Fiction</option>
+          <option value="Non Fiction">Non Fiction</option>
+          <option value="Narrative">Narrative</option>
+          <option value="Short Story">Short Story</option>
+          <option value="Novel">Novel</option>
+          <option value="Poetry">Poetry</option>
           <option value="Mystery">Mystery</option>
-          <option value="Science Fiction">Science Fiction</option>
+          <option value="Drama">Drama</option>
+          <option value="History">History</option>
+          <option value="Legend">Legend</option>
         </select>
         <span />
         <button
+          className="addBtn"
           type="button"
           onClick={addingBook}
         >
-          Add
+          Add Book
         </button>
       </form>
     </div>

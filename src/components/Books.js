@@ -1,21 +1,36 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
 import DisplayBook from './DisplayBook';
 import AddBookForm from './AddBookForm';
+import { FetchBook } from '../redux/books/booksSlice';
 
 const Books = () => {
-  const { books } = useSelector((state) => state.books);
+  const { books, isLoading, error } = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(FetchBook());
+  }, [dispatch]);
+
+  if (isLoading) {
+    return <p>Please wait it is loading...</p>;
+  }
+
+  if (error) {
+    return <p>Error occurred while fetching books</p>;
+  }
 
   return (
-    <div className="books-wrapper">
+    <ul className="books-wrapper">
       {books.map((book) => (
-        <div key={book.item_id} className="book">
+        <li key={book.item_id} className="book">
           {' '}
           <DisplayBook book={book} />
-        </div>
+        </li>
       ))}
 
       <AddBookForm />
-    </div>
+    </ul>
   );
 };
 

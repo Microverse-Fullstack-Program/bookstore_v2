@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-    <img src="bookstore.JPG" alt="logo" height="300" />
+    <img src="bookstore.JPG" alt="logo" width=700 height="300" />
   <br/>
 
   <h3><b>Bookstore website Using React & Redux </b></h3>

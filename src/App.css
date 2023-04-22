@@ -290,3 +290,21 @@ body {
 .bookBtn button:active {
   color: #cb1f1f;
 }
+
+.filter-input {
+  display: flex;
+  margin: 25px 35px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.cat-input {
+  border-radius: 3px;
+  background: #fff;
+  border: solid 2px #dbd8d8;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 0.45rem;
+  width: 12.75rem;
+}

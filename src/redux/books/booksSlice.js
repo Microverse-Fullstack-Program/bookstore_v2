@@ -9,6 +9,7 @@ const APIURL = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/books
 const ADD_BOOK = 'bookstore/booksSlice/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/booksSlice/REMOVE_BOOK';
 const FETCH_BOOKS = 'book-store/booksSlice/FETCH_BOOKS';
+const EDIT_BOOKS = 'book-store/booksSlice/EDIT_BOOKS';
 
 // Action creators
 const FetchBook = createAsyncThunk(FETCH_BOOKS, async () => {
@@ -20,6 +21,8 @@ const AddBook = createAsyncThunk(ADD_BOOK, async (books) => {
   const res = await axios.post(APIURL, books);
   return res.data;
 });
+
+const EditBook = createAsyncThunk(EDIT_BOOKS, async (book) => book);
 
 const RemoveBook = createAsyncThunk(REMOVE_BOOK, async (id) => {
   await axios.delete(`${APIURL}/${id}`);
@@ -45,6 +48,10 @@ const bookSlice = createSlice({
         category: bookItem.category,
       };
       state.books.push(book);
+    },
+    updateBook: (state, action) => {
+      const bookItem = action.payload;
+      state.books.push(bookItem);
     },
   },
   extraReducers: (builder) => {
@@ -90,6 +97,15 @@ const bookSlice = createSlice({
         isLoading: false,
         error: true,
       }))
+      .addCase(EditBook.fulfilled, (state, action) => ({
+        ...state,
+        books: state.books.filter((book) => book.item_id !== action.payload.item_id),
+        error: false,
+      }))
+      .addCase(EditBook.rejected, (state) => ({
+        ...state,
+        error: true,
+      }))
       .addCase(RemoveBook.fulfilled, (state, action) => ({
         ...state,
         books: state.books.filter((book) => book.item_id !== action.payload),
@@ -103,5 +119,7 @@ const bookSlice = createSlice({
 });
 
 export default bookSlice.reducer;
-export const { addNewBook } = bookSlice.actions;
-export { FetchBook, AddBook, RemoveBook };
+export const { addNewBook, updateBook } = bookSlice.actions;
+export {
+  FetchBook, AddBook, RemoveBook, EditBook,
+};

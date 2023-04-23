@@ -23,7 +23,7 @@ const Books = () => {
   return (
     <ul className="books-wrapper">
       {books.map((book) => (
-        <li key={book.item_id} className="book">
+        <li key={book.item_id}>
           {' '}
           <DisplayBook book={book} />
         </li>

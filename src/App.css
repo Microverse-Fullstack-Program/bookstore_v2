@@ -80,6 +80,7 @@ body {
 .book-wrapper {
   display: grid;
   grid-template-columns: 3.5fr 1.5fr 2fr;
+
 }
 
 .book {
@@ -225,7 +226,7 @@ body {
 }
 
 .title-input,
-.edit-title,
+.edit-title ,
 .author-input,
 .genre-input {
   border-radius: 4px;

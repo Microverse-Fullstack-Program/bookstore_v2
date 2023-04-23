@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-    <img src="bookstore.JPG" alt="logo" width=700 height="300" />
+    <img src="bookstore.JPG" alt="logo" width="500"  height="300" />
   <br/>
 
   <h3><b>Bookstore website Using React & Redux </b></h3>
@@ -77,7 +77,7 @@ By building this application, you will learn how to use React and Redux in the c
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://bookstore-xpp0.onrender.com)
+- [Live Demo Link](https://bookstore-xpp0.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +151,7 @@ This project can be used to learn and practice basics of React.js. Specifically;
 
 ## 🔭 Future Features <a name="future-features"></a>
 - [ ] Improve the UI/UX features
-- [ ] Add comments functionalities
+- [ ] Add Edit and comments functionalities
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

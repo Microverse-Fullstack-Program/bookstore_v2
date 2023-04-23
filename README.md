@@ -77,7 +77,7 @@ By building this application, you will learn how to use React and Redux in the c
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://bookstore-xpp0.onrender.com" target="_blank">Live Demo Link</a>
+- <a href="https://bookstore-xpp0.onrender.com" rel="noopener" target="_blank">Live Demo Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -151,7 +151,7 @@ This project can be used to learn and practice basics of React.js. Specifically;
 
 ## 🔭 Future Features <a name="future-features"></a>
 - [ ] Improve the UI/UX features
-- [ ] Add Edit and comments functionalities
+- [ ] Add comments functionalities
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
